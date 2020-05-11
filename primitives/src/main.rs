@@ -65,10 +65,41 @@ fn main() {
     use std::fmt::{self,Display,Formatter};
     impl fmt::Display for Matrix{
         fn fmt(&self, f: &mut Formatter) -> fmt::Result {
+            writeln!(f,"");
             writeln!(f, "({} {})", self.0, self.1)?;
             write!(f, "({} {})", self.2, self.3)
         }
     }
+    println!("{}",matrix);
 
-    println!("{}",matrix)
+    fn transpose2X2(matrix: Matrix) -> Matrix{
+        Matrix(matrix.0,matrix.2, matrix.1, matrix.3)
+    }
+    println!("transpose = {}",transpose2X2(matrix));
+
+    /*ARRAYS & SLICES*/
+    let x = 10;
+    let mut y = x;
+    println!("{} {}",x, y);
+    y = 12;
+    println!("{} {}",x, y);
+
+    let xs: [i32; 5] = [1,2,3,4,5];
+    let ys: [i32; 500] = [1; 500];//Fill array with default value.
+
+    use std::mem;
+    println!("{:?}", xs);
+    println!("array size: {}", xs.len());
+    println!("array xs occupies bytes: {}", mem::size_of_val(&xs));
+    println!("array ys occupies bytes: {}", mem::size_of_val(&ys));
+
+    fn analyze_slice(slice: &[i32]){//func borrows slice, cannot be a array since size unknown
+        println!("first element of the slice: {} and total len {}", slice[0], slice.len());
+    }
+
+    println!("whole array as slice");
+    analyze_slice(&xs);
+    analyze_slice(&xs[0..=4]);//inclusive 4
+    analyze_slice(&ys[1..8]);//exclusive 8
+
 }

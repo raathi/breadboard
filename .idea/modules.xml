@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/attributes/attributes.iml" filepath="$PROJECT_DIR$/attributes/attributes.iml" />
       <module fileurl="file://$PROJECT_DIR$/breadboard.iml" filepath="$PROJECT_DIR$/breadboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/conversion/conversion.iml" filepath="$PROJECT_DIR$/conversion/conversion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crates_lib/crates_lib.iml" filepath="$PROJECT_DIR$/crates_lib/crates_lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/custom_types/custom_types.iml" filepath="$PROJECT_DIR$/custom_types/custom_types.iml" />
       <module fileurl="file://$PROJECT_DIR$/expressions/expressions.iml" filepath="$PROJECT_DIR$/expressions/expressions.iml" />
       <module fileurl="file://$PROJECT_DIR$/flow_of_control/flow_of_control.iml" filepath="$PROJECT_DIR$/flow_of_control/flow_of_control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/functions/functions.iml" filepath="$PROJECT_DIR$/functions/functions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generics/generics.iml" filepath="$PROJECT_DIR$/generics/generics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_file_hierarchy/module_file_hierarchy.iml" filepath="$PROJECT_DIR$/module_file_hierarchy/module_file_hierarchy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/modules.iml" filepath="$PROJECT_DIR$/modules/modules.iml" />
       <module fileurl="file://$PROJECT_DIR$/primitives/primitives.iml" filepath="$PROJECT_DIR$/primitives/primitives.iml" />
       <module fileurl="file://$PROJECT_DIR$/types/types.iml" filepath="$PROJECT_DIR$/types/types.iml" />
       <module fileurl="file://$PROJECT_DIR$/variable_bindings/variable_bindings.iml" filepath="$PROJECT_DIR$/variable_bindings/variable_bindings.iml" />
